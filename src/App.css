@@ -1,0 +1,48 @@
+.carousel-height{
+  min-height: 510px !important;
+  max-height: 510px !important;
+}
+
+.booking-container{
+  padding: 10px;
+}
+
+/* Extra small devices (phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .carousel-height img{
+    height: 1900px !important;
+  }
+  .carousel-height{
+    height: 1600px !important;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .carousel-height img{
+    height: 1900px !important;
+  }
+  .carousel-height{
+    height: 1600px !important;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  /* Your styles for medium devices */
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  /* Your styles for large devices */
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  /* Your styles for extra large devices */
+}
+
+/* Extra extra large devices (extra large desktops, 1400px and up) */
+@media (min-width: 1400px) {
+  /* Your styles for extra extra large devices */
+}

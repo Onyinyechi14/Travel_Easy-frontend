@@ -29,7 +29,7 @@ const Home = () => {
 
   const navigate = useNavigate(); // Hook to handle navigation
   const baseUrl = 'https://traveleasy-backend.onrender.com';
-  // const baseUrl = 'https://traveleasy-3lsn.onrender.com'; // Hook to handle navigation
+  // const baseUrl = 'https://traveleasy-backend.onrender.com'; // Hook to handle navigation
 
    // Fetch states from the API when the component mounts
   useEffect(() => {

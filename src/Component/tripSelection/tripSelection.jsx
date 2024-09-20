@@ -55,7 +55,7 @@ const TripSelection = () => {
       const fetchCalculatedPrice = async () => {
       setLoading(true); // Start loading indicator
       try {
-        const response = await axios.get(`https://traveleasy-3lsn.onrender.com/price/${departureStateTerminal}/${destinationTerminal}`);
+        const response = await axios.get(`https://traveleasy-backend.onrender.com/price/${departureStateTerminal}/${destinationTerminal}`);
         console.log(`Departure: ${departureStateTerminal}; Destination: ${destinationTerminal}`);
         console.log('Response data:', response.data);
     

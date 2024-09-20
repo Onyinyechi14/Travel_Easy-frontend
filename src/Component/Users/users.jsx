@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'https://traveleasy-3lsn.onrender.com/users';
+const API_URL = 'https://traveleasy-backend.onrender.com/users';
 
 // export const registerUser = async (fullName, phoneNumber, email, password) => {
 //   try {

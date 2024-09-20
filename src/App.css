@@ -12,6 +12,9 @@
   .carousel-height img{
     height: 1900px !important;
   }
+  .sm-d-none{
+    display: none !important;
+  }
   .carousel-height{
     height: 1600px !important;
   }
@@ -21,6 +24,9 @@
 @media (min-width: 576px) and (max-width: 767.98px) {
   .carousel-height img{
     height: 1900px !important;
+  }
+  .sm-d-none{
+    display: none !important;
   }
   .carousel-height{
     height: 1600px !important;

@@ -13,7 +13,9 @@ const Navbar = () => {
   return (
     <nav className="flex items-center justify-between p-0 bg-slate-950 sticky top-0 z-40">
       <div>
+        <a href="/">
         <img className="rounded-full w-24 h-24" src={TRAVEL_logo} alt="Travel Easy" />
+        </a>
       </div>
 
       {/* Hamburger icon for small screens */}

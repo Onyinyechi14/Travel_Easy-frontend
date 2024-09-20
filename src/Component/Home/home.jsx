@@ -28,12 +28,14 @@ const Home = () => {
   const [destinationTerminal, setDestinationTerminal] = useState([]);
 
   const navigate = useNavigate(); // Hook to handle navigation
+  const baseUrl = 'https://traveleasy-backend.onrender.com';
+  // const baseUrl = 'http://localhost:1000'; // Hook to handle navigation
 
    // Fetch states from the API when the component mounts
   useEffect(() => {
     const fetchStates = async () => {
       try {
-        const response = await axios.get('http://localhost:1000/states');
+        const response = await axios.get(`${baseUrl}/states`);
         setStates(response.data);
       } catch (error) {
         console.error('Error fetching states:', error);
@@ -48,7 +50,7 @@ const Home = () => {
     if (departureState) {
       const fetchTerminals = async () => {
         try {
-          const response = await axios.get(`http://localhost:1000/terminals/${stateId}`);
+          const response = await axios.get(`${baseUrl}/terminals/${stateId}`);
           setTerminals(response.data);
           setDestination(''); // Reset destination when state changes
         } catch (error) {
@@ -65,7 +67,7 @@ const Home = () => {
     if (terminal) {
       const fetchDestinations = async () => {
         try {
-          const response = await axios.get(`http://localhost:1000/terminals`);
+          const response = await axios.get(`${baseUrl}/terminals`);
           setDestinations(response.data);
         } catch (error) {
           console.error('Error fetching destinations:', error);

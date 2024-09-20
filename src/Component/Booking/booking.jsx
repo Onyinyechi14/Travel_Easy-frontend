@@ -29,7 +29,7 @@ const booking = () => {
    useEffect(() => {
     const fetchStates = async () => {
       try {
-        const response = await axios.get('http://localhost:1000/states');
+        const response = await axios.get('https://traveleasy-3lsn.onrender.com/states');
         setStates(response.data);
       } catch (error) {
         console.error('Error fetching states:', error);
@@ -44,7 +44,7 @@ const booking = () => {
     if (departureState) {
       const fetchTerminals = async () => {
         try {
-          const response = await axios.get(`http://localhost:1000/terminals/${stateId}`);
+          const response = await axios.get(`https://traveleasy-3lsn.onrender.com/terminals/${stateId}`);
           setTerminals(response.data);
           setDestination(''); // Reset destination when state changes
         } catch (error) {
@@ -61,7 +61,7 @@ const booking = () => {
     if (terminal) {
       const fetchDestinations = async () => {
         try {
-          const response = await axios.get(`http://localhost:1000/terminals`);
+          const response = await axios.get(`https://traveleasy-3lsn.onrender.com/terminals`);
           setDestinations(response.data);
         } catch (error) {
           console.error('Error fetching destinations:', error);

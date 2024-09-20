@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:1000/users';
+const API_URL = 'https://traveleasy-3lsn.onrender.com/users';
 
 // export const registerUser = async (fullName, phoneNumber, email, password) => {
 //   try {
@@ -11,9 +11,6 @@ const API_URL = 'http://localhost:1000/users';
 //     throw error;
 //   }
 // };
-
-
-
 
 export const registerUser = async (fullName, email, password, phoneNumber) => {
   try {
@@ -50,20 +47,6 @@ export const registerUser = async (fullName, email, password, phoneNumber) => {
     }
   }
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 export const loginUser = async (email, password) => {

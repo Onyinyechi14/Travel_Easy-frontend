@@ -107,7 +107,7 @@ const Home = () => {
   <div className="relative overflow-hidden carousel-height">
     {/* Slide 1 */}
     <img className="object-cover w-full h-full" src={Slide1} alt="Slide 1" />
-    <div class="sm-d-none" className="absolute inset-0 flex items-center justify-start text-start ml-24 p-4">
+    <div className="sm-d-none absolute inset-0 flex items-center justify-start text-start ml-24 p-4">
       <p className="text-white bg-opacity-50 p-2 rounded-md text-lg md:text-2xl lg:text-4xl">
       WELCOME TO <br /> <span className='font-serif text-7xl text-slate-950 border-white'>TRAVEL EASY</span> 
       </p>
@@ -117,7 +117,7 @@ const Home = () => {
   <div className="relative overflow-hidden carousel-height">
     {/* Slide 2 */}
     <img className="object-cover w-full h-full" src={Slide2} alt="Slide 2" />
-    <div class="sm-d-none" className="absolute inset-0 flex items-center justify-start text-start p-4">
+    <div className="sm-d-none absolute inset-0 flex items-center justify-start text-start p-4">
       <p className="text-white bg-opacity-50 p-2 ml-10 rounded-md text-lg md:text-2xl lg:text-4xl">
       SEAMLESS JOURNEY <br /> BEGINS WITH <br /> <span className='font-serif text-6xl text-gray-500 border-white'>TRAVEL EASY</span> 
       </p>
@@ -127,7 +127,7 @@ const Home = () => {
   <div className="relative overflow-hidden carousel-height">
     {/* Slide 3 */}
     <img className="object-cover w-full h-full" src={Slide3} alt="Slide 3" />
-    <div class="sm-d-none" className="absolute inset-0 block items-center justify-start text-start p-4">
+    <div className="sm-d-none absolute inset-0 block items-center justify-start text-start p-4">
       <p className="text-white font-mono bg-opacity-50 mt-28 p-16 ml-16 rounded-md text-lg md:text-2xl lg:text-4xl">
       Experience Effortless <br />  Travel With  <br /> <span className='font-serif text-6xl text-slate-400 border-white'>TRAVEL EASY</span> 
       </p>

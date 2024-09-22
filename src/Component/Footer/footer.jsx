@@ -4,68 +4,38 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
 function Footer() {
+  const FeedbackForm = () => {
+    const [formData, setFormData] = useState({
+      name: '',
+      email: '',
+      title: '',
+      message: ''
+    });
+  
+    const navigate = useNavigate(); // React Router hook for navigation
+
+    const handleChange = (e) => {
+      const { name, value } = e.target;
+      setFormData({
+        ...formData,
+        [name]: value,
+      });
+    };
+    const handleSubmit = (e) => {
+      e.preventDefault(); // Prevent default form submission behavior
+  
+      // Display alert after submission
+      alert('Sent!');
+  
+      // Redirect to home after showing the alert
+      navigate('/');
+    };
   return (
     <footer className="bg-gray-900 text-white py-6 h-96">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-8">
           {/* Feedback Form */}
-          <FeedbackForm />
-
-          {/* Social Media & Copyright */}
           <div>
-            <h3 className="text-xl font-bold mb-4">Follow Us</h3>
-            <div className="flex space-x-6 mb-6">
-              <a href="#" className="text-gray-400 hover:text-white">
-                <FontAwesomeIcon icon={faFacebook} className="h-6 w-6" />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-white">
-                <FontAwesomeIcon icon={faTwitter} className="h-6 w-6" />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-white">
-                <FontAwesomeIcon icon={faInstagram} className="h-6 w-6" />
-              </a>
-            </div>
-            <div className="mt-4">
-              <p className="text-gray-400">&copy; 2024 Travel Easy. </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-  );
-}
-
-// FeedbackForm Component
-const FeedbackForm = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    title: '',
-    message: ''
-  });
-
-  const navigate = useNavigate(); // React Router hook for navigation
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value,
-    });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault(); // Prevent default form submission behavior
-
-    // Display alert after submission
-    alert('Sent!');
-
-    // Redirect to home after showing the alert
-    navigate('/');
-  };
-
-  return (
-    <div>
       <h3 className="text-xl font-bold mb-3">Feedback Form</h3>
       <form onSubmit={handleSubmit}>
         <div className="mb-3">
@@ -114,13 +84,36 @@ const FeedbackForm = () => {
         </div>
         <button
           type="submit"
-          className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded"
+          className="bg-blue-500 hover:bg-gray-950 text-white font-bold py-2 px-4 rounded"
         >
           Submit
         </button>
       </form>
     </div>
+
+          {/* Social Media & Copyright */}
+          <div>
+            <h3 className="text-xl font-bold mb-4">Follow Us</h3>
+            <div className="flex space-x-6 mb-6">
+              <a href="#" className="text-gray-400 hover:text-white">
+                <FontAwesomeIcon icon={faFacebook} className="h-6 w-6" />
+              </a>
+              <a href="#" className="text-gray-400 hover:text-white">
+                <FontAwesomeIcon icon={faTwitter} className="h-6 w-6" />
+              </a>
+              <a href="#" className="text-gray-400 hover:text-white">
+                <FontAwesomeIcon icon={faInstagram} className="h-6 w-6" />
+              </a>
+            </div>
+            <div className="mt-4">
+              <p className="text-gray-400">&copy; 2024 Travel Easy. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   );
-};
+}
+}
 
 export default Footer;

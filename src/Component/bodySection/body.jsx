@@ -33,7 +33,7 @@ const BodySection = () => {
         {/* Card 1 */}
         <div className="bg-white rounded-lg shadow-lg p-4">
           <img
-            className="rounded-t-lg w-full h-80 object-cover"
+            className="rounded-t-lg w-full h-80 object-cover ml-7"
             src="https://autojosh.com/wp-content/uploads/2019/05/2019-toyota-hiace-bus-5.jpg"
             alt="Option 1"
           />
@@ -45,7 +45,7 @@ const BodySection = () => {
         {/* Card 2 */}
         <div className="bg-white rounded-lg shadow-lg p-4">
           <img
-            className="rounded-t-lg w-full h-80 object-cover"
+            className="rounded-t-lg w-full h-80 object-cover ml-7"
             src="https://i0.wp.com/wiseride.com.ng/wp-content/uploads/2020/09/2020-toyota-sienna-se-fwd-8-passenger-natl-angular-front-exterior-view_100703186_m.jpg?w=640&ssl=1"
             alt="Option 2"
           />

@@ -28,7 +28,7 @@ const Home = () => {
   const [destinationTerminal, setDestinationTerminal] = useState([]);
 
   const navigate = useNavigate(); // Hook to handle navigation
-  const baseUrl = 'https://traveleasy-backend.onrender.com';
+  const baseUrl = import.meta.env.VITE_API_ENV !== 'local' ? 'https://traveleasy-backend.onrender.com' : 'http://localhost:1000';
   // const baseUrl = 'https://traveleasy-backend.onrender.com'; // Hook to handle navigation
 
    // Fetch states from the API when the component mounts
@@ -136,7 +136,7 @@ const Home = () => {
 </Carousel>
 
     {/* Form container */}
-    <div className="absolute top-0 right-0 lg:w-1/3 mx-auto mb-2 mt-2 bg-white bg-opacity-80 rounded-lg shadow-lg md:mt-8 mr-4 md:mr-8 z-10">
+    <div className="absolute top-0 right-0 lg:w-1/3 mx-auto mb-2 mt-2 bg-white bg-opacity-80 rounded-lg shadow-lg md:mt-8 mr-4 md:mr-8 z-10 booking-form">
       <h2 className="text-xl md:text-2xl font-bold mb-2 text-center">Book A Trip</h2>
       <form onSubmit={handleSubmit} class="booking-container">
         {/* Trip type selection */}

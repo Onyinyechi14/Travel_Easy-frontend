@@ -31,6 +31,9 @@
   .carousel-height{
     height: 1600px !important;
   }
+  .booking-form{
+    position: fixed;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */

@@ -31,8 +31,10 @@
   .carousel-height{
     height: 1600px !important;
   }
-  .booking-form{
-    position: fixed;
+  .booking-container{
+    position: static;
+    margin-top: 20px;
+    transform: none;
   }
 }
 

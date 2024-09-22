@@ -21,15 +21,15 @@ function Footer() {
         [name]: value,
       });
     };
-    const handleSubmit = (e) => {
-      e.preventDefault(); // Prevent default form submission behavior
-  
-      // Display alert after submission
-      alert('Sent!');
-  
-      // Redirect to home after showing the alert
-      navigate('/');
-    };
+  const handleSubmit = (e) => {
+    e.preventDefault(); // Prevent default form submission behavior
+
+    // Display alert after submission
+    alert('Sent!');
+
+    // Redirect to home after showing the alert
+    navigate('/');
+  };
   return (
     <footer className="bg-gray-900 text-white py-6 h-96">
       <div className="container mx-auto px-4">

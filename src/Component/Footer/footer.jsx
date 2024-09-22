@@ -36,60 +36,61 @@ function Footer() {
         <div className="grid md:grid-cols-2 gap-8">
           {/* Feedback Form */}
           <div>
-      <h3 className="text-xl font-bold mb-3">Feedback Form</h3>
-      <form onSubmit={handleSubmit}>
-        <div className="mb-3">
-          <input
-            type="text"
-            id="name"
-            name="name"
-            value={formData.name}
-            onChange={handleChange}
-            placeholder="Your Name"
-            className="w-full p-2 rounded bg-gray-800 text-white border border-gray-700 focus:outline-none focus:border-blue-500"
-          />
-        </div>
-        <div className="mb-3">
-          <input
-            type="email"
-            id="email"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-            placeholder="Your Email"
-            className="w-full p-2 rounded bg-gray-800 text-white border border-gray-700 focus:outline-none focus:border-blue-500"
-          />
-        </div>
-        <div className="mb-3">
-          <input
-            type="text"
-            id="title"
-            name="title"
-            value={formData.title}
-            onChange={handleChange}
-            placeholder="Title"
-            className="w-full p-2 rounded bg-gray-800 text-white border border-gray-700 focus:outline-none focus:border-blue-500"
-          />
-        </div>
-        <div className="mb-3">
-          <textarea
-            id="message"
-            name="message"
-            value={formData.message}
-            onChange={handleChange}
-            rows="2"
-            placeholder="Your Message"
-            className="w-full p-3 rounded bg-gray-800 text-white border border-gray-700 focus:outline-none focus:border-blue-500"
-          ></textarea>
-        </div>
-        <button
-          type="submit"
-          className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded"
-        >
-          Submit
-        </button>
-      </form>
-    </div>
+            <h3 className="text-xl font-bold mb-3">Feedback Form</h3>
+            <form onSubmit={handleSubmit}>
+              <div className="mb-3">
+                {/* <label htmlFor="name" className="block text-sm font-semibold mb-2">Enter Name</label> */}
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleChange}
+                  placeholder="Your Name"
+                  className="w-full p-2 rounded bg-gray-800 text-white border border-gray-700 focus:outline-none focus:border-blue-500"
+                />
+              </div>
+              <div className="mb-3">
+                {/* <label htmlFor="email" className="block text-sm font-semibold mb-2">Enter Email</label> */}
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  placeholder="Your Email"
+                  className="w-full p-2 rounded bg-gray-800 text-white border border-gray-700 focus:outline-none focus:border-blue-500"
+                />
+              </div>
+              <div className="mb-3">
+                {/* <label htmlFor="title" className="block text-sm font-semibold mb-2">Title</label> */}
+                <input
+                  type="text"
+                  id="title"
+                  name="title"
+                  value={formData.title}
+                  onChange={handleChange}
+                  placeholder="Title"
+                  className="w-full p-2 rounded bg-gray-800 text-white border border-gray-700 focus:outline-none focus:border-blue-500"
+                />
+              </div>
+              <div className="mb-3">
+                {/* <label htmlFor="message" className="block text-sm font-semibold mb-2">Message</label> */}
+                <textarea
+                  id="message"
+                  name="message"
+                  value={formData.message}
+                  onChange={handleChange}
+                  rows="2"
+                  placeholder="Your Message"
+                  className="w-full p-3 rounded bg-gray-800 text-white border border-gray-700 focus:outline-none focus:border-blue-500"
+                ></textarea>
+              </div>
+              <button type="submit" className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">
+                Submit
+              </button>
+            </form>
+          </div>
 
           {/* Social Media & Copyright */}
           <div>

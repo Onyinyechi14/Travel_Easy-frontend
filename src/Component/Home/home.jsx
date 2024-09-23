@@ -128,7 +128,7 @@ const Home = () => {
     {/* Slide 3 */}
     <img className="object-cover w-full h-full" src={Slide3} alt="Slide 3" />
     <div className="sm-d-none absolute inset-0 block items-center lg:justify-start lg:text-start sm:justify-center sm:text-center p-4">
-      <p className="text-white font-mono bg-opacity-50 mt-28 p-16 ml-16 rounded-md text-lg md:text-2xl lg:text-4xl">
+      <p className="text-white font-mono bg-opacity-50 mt-28 p-16 lg:ml-16 rounded-md text-lg md:text-2xl lg:text-4xl">
       Experience Effortless <br />  Travel With  <br /> <span className='font-serif text-6xl text-slate-400 border-white'>TRAVEL EASY</span> 
       </p>
     </div>

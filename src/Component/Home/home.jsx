@@ -243,7 +243,7 @@ const Home = () => {
             </select>
           </div>
 
-          <div className="flex flex-col text-center">
+          <div className="flex flex-col text-center sm:w-full">
             <label className="block mb-2">Date (YYYY-MM-DD)</label>
             <DatePicker
               selected={date}

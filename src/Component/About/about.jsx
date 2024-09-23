@@ -50,7 +50,7 @@ const About = () => {
 <div className="grid grid-cols-1 sm:grid-cols-2 py-8">
   {/* Our Stories and Experience */}
   <div>
-    <h3 className="text-2xl font-bold mb-2 ml-36">OUR STORIES AND <br /> EXPERIENCE</h3>
+    <h3 className="text-2xl font-bold mb-2 lg:ml-36">OUR STORIES AND <br /> EXPERIENCE</h3>
   </div>
 
   {/* Flexible Travel Policy */}

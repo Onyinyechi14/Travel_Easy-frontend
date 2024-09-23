@@ -13,7 +13,7 @@
     height: 1900px !important;
   }
   .sm-d-none{
-    display: none !important;
+    /* display: none !important; */
   }
   .carousel-height{
     height: 1600px !important;

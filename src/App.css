@@ -31,11 +31,11 @@
   .carousel-height{
     height: 1600px !important;
   }
-  .booking{
+  /* .booking-container{
     position: static;
     margin-top: 20px;
     transform: none;
-  }
+  } */
 }
 
 /* Medium devices (landscape tablets, 768px and up) */

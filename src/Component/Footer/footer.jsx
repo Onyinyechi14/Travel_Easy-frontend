@@ -86,7 +86,7 @@ function Footer() {
                   className="w-full p-3 rounded bg-gray-800 text-white border border-gray-700 focus:outline-none focus:border-blue-500"
                 ></textarea>
               </div>
-              <button type="submit" className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">
+              <button type="submit" className="bg-blue-500 hover:bg-slate-800 text-white font-bold py-2 px-4 rounded">
                 Submit
               </button>
             </form>

@@ -19,10 +19,15 @@ function Footer() {
     });
   };
 
+  const navigate = useNavigate();
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission (e.g., send data to the server)
-    console.log(formData);
+    // Display alert after submission
+      alert('Sent!');
+  
+      // Redirect to home after showing the alert
+      navigate('/');
   };
 
   return (

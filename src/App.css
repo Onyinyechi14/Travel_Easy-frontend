@@ -18,6 +18,11 @@
   .carousel-height{
     height: 1600px !important;
   }
+  .booking-container{
+    position: static;
+    margin-top: 20px;
+    transform: none;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 576px and up) */
@@ -31,11 +36,7 @@
   .carousel-height{
     height: 1600px !important;
   }
-  /* .booking-container{
-    position: static;
-    margin-top: 20px;
-    transform: none;
-  } */
+  
 }
 
 /* Medium devices (landscape tablets, 768px and up) */

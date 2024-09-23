@@ -243,13 +243,13 @@ const Home = () => {
             </select>
           </div>
 
-          <div className="flex flex-col text-center sm:w-full">
+          <div className="flex flex-col text-center">
             <label className="block mb-2">Date (YYYY-MM-DD)</label>
             <DatePicker
               selected={date}
               onChange={(date) => setDate(date)}
               dateFormat="yyyy-MM-dd"
-              className="p-1 border rounded"
+              className="p-1 border rounded sm:w-full"
             />
           </div>
         </div>
